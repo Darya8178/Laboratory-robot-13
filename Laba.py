@@ -12,7 +12,13 @@ def write_to_csv(file_name):
                 name = input("Enter name (or type 'stop' to finish): ")
                 if name.lower() == 'stop':
                     break
+
                 age = input("Enter age: ")
+                # Check if age is a valid number
+                while not age.isdigit():
+                    print("Invalid input. Please enter a valid number for age.")
+                    age = input("Enter age: ")
+
                 city = input("Enter city: ")
 
                 writer.writerow([name, age, city])
@@ -45,3 +51,4 @@ json_file = 'data.json'
 
 write_to_csv(csv_file)
 csv_to_json(csv_file, json_file)
+
