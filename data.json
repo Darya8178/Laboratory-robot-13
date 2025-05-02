@@ -2,8 +2,13 @@
     "data": [
         {
             "Name": "Oleh",
-            "Age": "18",
+            "Age": "19",
             "City": "Druzhba"
+        },
+        {
+            "Name": "Dasha Konotop",
+            "Age": "19",
+            "City": "Konotop"
         }
     ]
 }
